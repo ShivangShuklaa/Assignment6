@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM Example</title>
+    <style>
+        /* Define CSS styles using BEM class names */
+        
+        /* Block level styles (paragraph) */
+        .paragraph {
+            font-family: Arial, sans-serif;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        /* Element level styles (title inside a paragraph) */
+        .paragraph__title {
+            font-size: 20px;
+            color: #0077b6;
+            text-decoration: underline;
+        }
+
+        /* Modifier level styles (highlighted paragraph) */
+        .paragraph--highlight {
+            background-color: #ffad60;
+        }
+
+        /* Modifier level styles (large text) */
+        .paragraph--large {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Example paragraphs with BEM class names -->
+    <p class="paragraph">This is a simple paragraph.</p>
+
+    <p class="paragraph paragraph--highlight">This is a highlighted paragraph.</p>
+
+    <p class="paragraph paragraph--large">This is a large paragraph.</p>
+
+    <p class="paragraph paragraph--highlight paragraph--large">This is a large highlighted paragraph.</p>
+
+    <p class="paragraph paragraph--large paragraph--highlight"><span class="paragraph__title">Important Title</span> This is a large and highlighted paragraph with a title.</p>
+
+<!-- In this example:
+
+.paragraph is the "block." All paragraphs are styled with common properties.
+.paragraph__title is the "element." It styles the titles within paragraphs.
+.paragraph--highlight and .paragraph--large are "modifiers." They are used to modify the appearance of paragraphs as highlighted or with a larger font size.
+By following the BEM naming convention, you create structured and easy-to-understand class names that help maintain and scale your CSS codebase efficiently. -->
+</body>
+</html>

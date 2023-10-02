@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Form</title>
+    <style>
+        .form-container {
+            width: 400px;
+            margin: 0 auto;
+            background-color: #c7bebe;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .form-label {
+            font-weight: bold;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .radio-label, .checkbox-label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-button {
+            background-color: #db2727;
+            color: #e4dfdf;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .opacity-section {
+            background-color: rgba(255, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Styled Form</h2>
+        <form>
+            <div>
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" id="name" class="form-input" placeholder="Enter your name">
+            </div>
+            <div>
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" id="email" class="form-input" placeholder="Enter your email">
+            </div>
+            <div class="opacity-section">
+                <label class="radio-label form-label">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male" class="radio-label">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female" class="radio-label">Female</label>
+            </div>
+            <div>
+                <label class="checkbox-label form-label">Interests:</label>
+                <input type="checkbox" id="sports" name="interests" value="sports">
+                <label for="sports" class="checkbox-label">Sports</label>
+                <input type="checkbox" id="music" name="interests" value="music">
+                <label for="music" class="checkbox-label">Music</label>
+            </div>
+            <button type="submit" class="form-button">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
+

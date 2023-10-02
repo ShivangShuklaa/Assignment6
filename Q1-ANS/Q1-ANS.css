@@ -1,0 +1,6 @@
+/* External css*/
+.box {
+    background-color: rgb(192, 128, 103);
+    color: rgb(0, 0, 0);
+    border: 2px solid darkred;
+}
